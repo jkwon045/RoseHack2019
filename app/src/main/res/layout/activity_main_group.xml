@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="?android:listPreferredItemPaddingLeft"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingStart="45dp">
+
+
+    <TextView
+        android:id="@+id/mainGoalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/countdownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Days Left"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginLeft="175dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@android:drawable/checkbox_on_background"
+            android:visibility="invisible"/>
+
+    </TableRow>
+</LinearLayout>
